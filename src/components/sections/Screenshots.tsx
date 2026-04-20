@@ -13,8 +13,11 @@ import zondamov2 from "@/assets/zondamov-2.png";
 import zondamov3 from "@/assets/zondamov-3.png";
 import zondamov4 from "@/assets/zondamov-4.png";
 import zondamov5 from "@/assets/zondamov-5.png";
-import appClientesLote from "@/assets/app-clientes-lote.jpg";
-import appAdmin from "@/assets/app-admin.jpg";
+import lote1 from "@/assets/lote-1.png";
+import lote2 from "@/assets/lote-2.png";
+import lote3 from "@/assets/lote-3.png";
+import lote4 from "@/assets/lote-4.png";
+import lote5 from "@/assets/lote-5.png";
 
 type App = {
   logo: string;
@@ -41,10 +44,10 @@ const apps: App[] = [
   },
   {
     logo: logoEllote,
-    title: "Sistema Clientes El Lote",
-    tag: "Tiempo real",
-    desc: "Dos apps sincronizadas en tiempo real con Supabase: una para clientes en el local con promos y ofertas, y un panel admin para métricas y gestión completa desde tablet.",
-    shots: [appClientesLote, appAdmin],
+    title: "Clientes El Lote",
+    tag: "Fidelización en tiempo real",
+    desc: "Ecosistema basado en Supabase con sincronización en tiempo real entre el negocio y el cliente. App con sistema de puntos por compras presenciales, canje por promociones exclusivas, catálogo dinámico de ofertas, avisos, horarios y mapa integrado. Incluye panel admin interno para gestionar usuarios, cargar promos y enviar comunicados masivos. Ya disponible en Google Play.",
+    shots: [lote1, lote2, lote3, lote4, lote5],
   },
 ];
 
