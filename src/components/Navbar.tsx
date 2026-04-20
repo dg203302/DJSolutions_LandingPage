@@ -47,12 +47,14 @@ export function Navbar() {
         </div>
       </header>
 
-      {/* Mobile floating brand pill */}
+      {/* Mobile floating brand pill - liquid glass */}
       <a
         href="#top"
-        className="md:hidden fixed top-4 left-1/2 -translate-x-1/2 z-50 rounded-full border border-border bg-background/80 backdrop-blur-xl px-4 py-2 font-display text-sm font-bold tracking-tight shadow-card"
+        className="md:hidden fixed top-4 left-1/2 -translate-x-1/2 z-50 rounded-full border border-white/15 bg-white/5 backdrop-blur-2xl backdrop-saturate-150 px-5 py-2 font-display text-sm font-bold tracking-tight shadow-[0_8px_32px_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.25),inset_0_-1px_0_rgba(255,255,255,0.05)] overflow-hidden"
       >
-        D&amp;J<span className="text-gradient">Solutions</span>.
+        <span className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-b from-white/20 via-transparent to-transparent" />
+        <span className="pointer-events-none absolute -top-1 left-2 right-2 h-1/2 rounded-full bg-gradient-to-b from-white/30 to-transparent blur-[2px]" />
+        <span className="relative">D&amp;J<span className="text-gradient">Solutions</span>.</span>
       </a>
 
       {/* Mobile floating bottom bar */}
