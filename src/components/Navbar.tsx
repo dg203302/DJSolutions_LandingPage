@@ -4,7 +4,7 @@ import { Briefcase, Users, Smartphone, Mail, Send } from "lucide-react";
 const links = [
   { href: "#servicios", label: "Servicios", Icon: Briefcase },
   { href: "#equipo", label: "Equipo", Icon: Users },
-  { href: "#capturas", label: "Capturas", Icon: Smartphone },
+  { href: "#capturas", label: "Proyectos", Icon: Smartphone },
   { href: "#contacto", label: "Contacto", Icon: Mail },
 ];
 
