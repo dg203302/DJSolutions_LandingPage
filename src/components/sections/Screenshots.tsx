@@ -3,10 +3,16 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import logoDebitu from "@/assets/logo-debitu.png";
 import logoEllote from "@/assets/logo-ellote.png";
+import logoZondamov from "@/assets/logo-zondamov.png";
 import debitu1 from "@/assets/debitu-1.png";
 import debitu2 from "@/assets/debitu-2.png";
 import debitu3 from "@/assets/debitu-3.png";
 import debitu4 from "@/assets/debitu-4.png";
+import zondamov1 from "@/assets/zondamov-1.png";
+import zondamov2 from "@/assets/zondamov-2.png";
+import zondamov3 from "@/assets/zondamov-3.png";
+import zondamov4 from "@/assets/zondamov-4.png";
+import zondamov5 from "@/assets/zondamov-5.png";
 import appClientesLote from "@/assets/app-clientes-lote.jpg";
 import appAdmin from "@/assets/app-admin.jpg";
 
@@ -25,6 +31,13 @@ const apps: App[] = [
     tag: "Cuentas corrientes",
     desc: "App para gestionar cuentas corrientes en negocios de barrio. Registrá clientes, anotá deudas y pagos, enviá saldos por WhatsApp y usá la calculadora integrada. Interfaz moderna con bottom-sheets, transparencias elegantes y login seguro con Google.",
     shots: [debitu1, debitu2, debitu3, debitu4],
+  },
+  {
+    logo: logoZondamov,
+    title: "ZondaMov",
+    tag: "Transporte en tiempo real",
+    desc: "App de transporte público con estética Liquid Glass: mapa con OpenStreetMap, búsqueda multimodal de líneas, paradas y ubicaciones, planificador de recorridos con control de trasbordos y horarios en tiempo real. Compatible con teléfonos, tablets y navegador, con modo oscuro y control de rendimiento.",
+    shots: [zondamov1, zondamov2, zondamov3, zondamov4, zondamov5],
   },
   {
     logo: logoEllote,
