@@ -14,7 +14,7 @@ export function Contact() {
     <section id="contacto" className="relative py-32 px-6">
       <div className="mx-auto max-w-4xl">
         <Reveal>
-          <div className="relative rounded-3xl border border-border bg-card/60 backdrop-blur p-10 md:p-14 overflow-hidden">
+          <div className="relative rounded-3xl border border-white/10 bg-card/20 backdrop-blur-2xl backdrop-saturate-150 p-10 md:p-14 overflow-hidden">
             <div className="absolute -top-32 -right-32 h-72 w-72 rounded-full bg-accent/15 blur-3xl" />
             <div className="absolute -bottom-32 -left-32 h-72 w-72 rounded-full bg-primary/15 blur-3xl" />
 

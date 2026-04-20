@@ -50,7 +50,7 @@ export function Team() {
         <div className="mt-16 grid gap-8 md:grid-cols-2">
           {team.map((m, i) => (
             <Reveal key={m.name} delay={i * 0.1}>
-              <div className="group relative rounded-3xl border border-border bg-card/60 backdrop-blur p-8 hover:border-accent/40 transition-all">
+              <div className="group relative rounded-3xl border border-white/10 bg-card/20 backdrop-blur-2xl backdrop-saturate-150 p-8 hover:border-accent/40 transition-all">
                 <div className="flex items-center gap-5">
                   <div className="relative">
                     <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-accent to-primary opacity-60 blur-md group-hover:opacity-100 transition" />
