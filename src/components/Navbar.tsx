@@ -57,17 +57,19 @@ export function Navbar() {
         <span className="relative">D&amp;J<span className="text-gradient">Solutions</span>.</span>
       </a>
 
-      {/* Mobile floating bottom bar */}
+      {/* Mobile floating bottom bar - liquid glass */}
       <nav
-        className="md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1 rounded-full border border-border bg-background/80 backdrop-blur-xl px-2 py-2 shadow-card"
+        className="md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1 rounded-full border border-white/15 bg-white/5 backdrop-blur-2xl backdrop-saturate-150 px-2 py-2 shadow-[0_8px_32px_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.25),inset_0_-1px_0_rgba(255,255,255,0.05)] overflow-hidden"
         aria-label="Navegación móvil"
       >
+        <span className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-b from-white/15 via-transparent to-transparent" />
+        <span className="pointer-events-none absolute -top-1 left-3 right-3 h-1/2 rounded-full bg-gradient-to-b from-white/25 to-transparent blur-[2px]" />
         {links.map(({ href, label, Icon }) => (
           <a
             key={href}
             href={href}
             aria-label={label}
-            className="flex flex-col items-center justify-center px-3 py-1.5 rounded-full text-muted-foreground hover:text-foreground hover:bg-card/60 transition-colors"
+            className="relative flex flex-col items-center justify-center px-3 py-1.5 rounded-full text-muted-foreground hover:text-foreground hover:bg-white/10 transition-colors"
           >
             <Icon className="h-5 w-5" />
             <span className="text-[10px] mt-0.5">{label}</span>
@@ -76,7 +78,7 @@ export function Navbar() {
         <a
           href="#contacto"
           aria-label="Cotizar Proyecto"
-          className="ml-1 flex items-center justify-center h-11 w-11 rounded-full bg-primary text-primary-foreground glow-blue hover:opacity-90 transition"
+          className="relative ml-1 flex items-center justify-center h-11 w-11 rounded-full bg-primary text-primary-foreground glow-blue hover:opacity-90 transition"
         >
           <Send className="h-5 w-5" />
         </a>
