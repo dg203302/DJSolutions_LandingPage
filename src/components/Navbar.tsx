@@ -21,7 +21,7 @@ export function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`hidden md:block fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
             ? "backdrop-blur-xl bg-background/70 border-b border-border"
             : "bg-transparent"
@@ -46,6 +46,14 @@ export function Navbar() {
           </a>
         </div>
       </header>
+
+      {/* Mobile floating brand pill */}
+      <a
+        href="#top"
+        className="md:hidden fixed top-4 left-1/2 -translate-x-1/2 z-50 rounded-full border border-border bg-background/80 backdrop-blur-xl px-4 py-2 font-display text-sm font-bold tracking-tight shadow-card"
+      >
+        D&amp;J<span className="text-gradient">Solutions</span>.
+      </a>
 
       {/* Mobile floating bottom bar */}
       <nav
