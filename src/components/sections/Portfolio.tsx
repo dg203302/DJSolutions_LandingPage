@@ -1,10 +1,14 @@
 import { Reveal } from "@/components/Reveal";
 import { Github, ExternalLink, Play } from "lucide-react";
+import logoEllote from "@/assets/logo-ellote.png";
+import logoDebitu from "@/assets/logo-debitu.png";
+import logoZondamov from "@/assets/logo-zondamov.png";
 
 const projects = [
   {
     title: "Sistema Clientes El Lote",
     tag: "Tiempo real",
+    logo: logoEllote,
     desc: "Sistema de administración con dos apps sincronizadas: una para clientes en el local y otra para gerentes/administradores. Gestión de clientes, promos, ofertas y avisos sincronizada en tiempo real con Supabase.",
     techs: ["JavaScript", "Supabase", "PWA Builder"],
     links: [
@@ -16,6 +20,7 @@ const projects = [
   {
     title: "Debitú",
     tag: "Cuentas corrientes",
+    logo: logoDebitu,
     desc: "App para gestionar cuentas corrientes de clientes, diseñada para negocios chicos y de barrio donde se fía. Simple, directa y pensada para personas que no tienen tiempo para complicaciones: registrá clientes con nombre y teléfono, anotá deudas y pagos con historial detallado, mandá un WhatsApp automático con el saldo de cada cliente y usá la calculadora integrada sin salir de la app. Todo en tu celular, siempre disponible, nunca se pierde. No es para grandes empresas: es para el almacén, la verdulería, la panadería, el pequeño negocio que mueve la economía del barrio.",
     techs: ["JavaScript", "Supabase", "Edge Functions", "Google OAuth"],
     links: [
@@ -25,6 +30,7 @@ const projects = [
   {
     title: "ZondaMov",
     tag: "Transporte · PWA",
+    logo: logoZondamov,
     desc: "PWA de planificación de transporte público pensada para la red de Red Tulum. Sin instalación, desde el navegador: ver qué líneas pasan por una parada, tiempos de arribo en tiempo real (alimentados por un proxy propio sobre la API de Red Tulum / Moovit), planificación de trayectos con opción de trasbordo, búsqueda integrada de líneas, paradas y lugares, guardado rápido de hasta 5 favoritos e interfaz moderna estilo Liquid Glass con opciones de accesibilidad para dispositivos modestos.",
     techs: ["Feed GTFS", "OpenStreetMap", "GPS", "PWA"],
     links: [
@@ -52,7 +58,17 @@ export function Portfolio() {
             <Reveal key={p.title} delay={i * 0.1}>
               <article className="group relative h-full rounded-3xl border border-border bg-card/60 backdrop-blur p-8 hover:border-accent/40 transition">
                 <div className="flex items-start justify-between gap-4">
-                  <h3 className="font-display text-2xl font-semibold">{p.title}</h3>
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 h-14 w-14 rounded-2xl bg-background/60 border border-border overflow-hidden flex items-center justify-center p-1.5">
+                      <img
+                        src={p.logo}
+                        alt={`${p.title} logo`}
+                        loading="lazy"
+                        className="h-full w-full object-contain"
+                      />
+                    </div>
+                    <h3 className="font-display text-2xl font-semibold">{p.title}</h3>
+                  </div>
                   <span className="flex-shrink-0 rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs text-accent">
                     {p.tag}
                   </span>
