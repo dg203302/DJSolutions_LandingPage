@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { Briefcase, Users, Smartphone, Mail, Send } from "lucide-react";
 
 const links = [
@@ -9,14 +8,6 @@ const links = [
 ];
 
 export function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    onScroll();
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   return (
     <>
