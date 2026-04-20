@@ -62,7 +62,7 @@ export function Hero() {
             Empezar Ahora
           </a>
           <a
-            href="#portfolio"
+            href="#capturas"
             className="inline-flex items-center justify-center rounded-full border border-border bg-card/40 backdrop-blur px-7 py-3 text-sm font-semibold hover:bg-card transition"
           >
             Ver Proyectos
