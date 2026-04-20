@@ -37,7 +37,7 @@ export function Stack() {
         </Reveal>
 
         <Reveal delay={0.15}>
-          <div className="relative rounded-3xl border border-border bg-card/60 backdrop-blur p-8 glow-blue/30">
+          <div className="relative rounded-3xl border border-white/10 bg-card/20 backdrop-blur-2xl backdrop-saturate-150 p-8 glow-blue/30">
             <h3 className="font-display text-2xl font-semibold">Nuestro Stack Favorito</h3>
             <div className="mt-8 grid grid-cols-2 gap-4">
               {stack.map((s) => (
