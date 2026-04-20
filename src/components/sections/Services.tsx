@@ -41,7 +41,7 @@ export function Services() {
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((s, i) => (
             <Reveal key={s.title} delay={i * 0.08}>
-              <div className="group relative h-full rounded-2xl border border-border bg-card/60 backdrop-blur p-6 hover:border-accent/40 transition-all duration-300 hover:-translate-y-1">
+              <div className="group relative h-full rounded-2xl border border-white/10 bg-card/20 backdrop-blur-2xl backdrop-saturate-150 p-6 hover:border-accent/40 transition-all duration-300 hover:-translate-y-1">
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div className="relative">
                   <div className="inline-flex items-center justify-center h-12 w-12 rounded-xl bg-primary/15 text-accent mb-5">
