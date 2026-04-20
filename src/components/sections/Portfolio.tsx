@@ -14,12 +14,21 @@ const projects = [
     ],
   },
   {
-    title: "Sistema de Gestión de Clientes",
-    tag: "Productividad",
-    desc: "Sistema para llevar la cuenta de contactos, deudas activas por cliente y monto total abonado. Incluye registro detallado de pagos, calculadora integrada y búsqueda optimizada.",
-    techs: ["JavaScript", "Supabase"],
+    title: "Debitú",
+    tag: "Cuentas corrientes",
+    desc: "App para gestionar cuentas corrientes de clientes, diseñada para negocios chicos y de barrio donde se fía. Simple, directa y pensada para personas que no tienen tiempo para complicaciones: registrá clientes con nombre y teléfono, anotá deudas y pagos con historial detallado, mandá un WhatsApp automático con el saldo de cada cliente y usá la calculadora integrada sin salir de la app. Todo en tu celular, siempre disponible, nunca se pierde. No es para grandes empresas: es para el almacén, la verdulería, la panadería, el pequeño negocio que mueve la economía del barrio.",
+    techs: ["JavaScript", "Supabase", "Edge Functions", "Google OAuth"],
     links: [
       { Icon: Github, label: "Repositorio", href: "https://github.com/dg203302/SistemaClientesC" },
+    ],
+  },
+  {
+    title: "ZondaMov",
+    tag: "Transporte · PWA",
+    desc: "PWA de planificación de transporte público pensada para la red de Red Tulum. Sin instalación, desde el navegador: ver qué líneas pasan por una parada, tiempos de arribo en tiempo real (alimentados por un proxy propio sobre la API de Red Tulum / Moovit), planificación de trayectos con opción de trasbordo, búsqueda integrada de líneas, paradas y lugares, guardado rápido de hasta 5 favoritos e interfaz moderna estilo Liquid Glass con opciones de accesibilidad para dispositivos modestos.",
+    techs: ["Feed GTFS", "OpenStreetMap", "GPS", "PWA"],
+    links: [
+      { Icon: Github, label: "Repositorio", href: "https://github.com/dg203302/ZondaMov" },
     ],
   },
 ];
