@@ -1,4 +1,4 @@
-import { Briefcase, Users, Smartphone, Mail, Send } from "lucide-react";
+import { Briefcase, Users, Smartphone, Mail } from "lucide-react";
 
 const links = [
   { href: "#servicios", label: "Servicios", Icon: Briefcase },
