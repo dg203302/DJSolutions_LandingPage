@@ -38,12 +38,6 @@ export function Navbar() {
             ))}
           </nav>
 
-          <a
-            href="#contacto"
-            className="relative ml-1 inline-flex items-center rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:opacity-90 transition glow-blue"
-          >
-            Cotizar Proyecto
-          </a>
         </div>
       </header>
 
@@ -75,13 +69,6 @@ export function Navbar() {
             <span className="text-[10px] mt-0.5">{label}</span>
           </a>
         ))}
-        <a
-          href="#contacto"
-          aria-label="Cotizar Proyecto"
-          className="relative ml-1 flex items-center justify-center h-11 w-11 rounded-full bg-primary text-primary-foreground glow-blue hover:opacity-90 transition"
-        >
-          <Send className="h-5 w-5" />
-        </a>
       </nav>
     </>
   );
