@@ -40,6 +40,7 @@ const apps: App[] = [
     shots: [debitu1, debitu2, debitu3, debitu4],
     links: [
       { Icon: Github, label: "Repositorio", href: "https://github.com/dg203302/SistemaClientesC" },
+      { Icon: ExternalLink, label: "Landing", href: "https://debitu.lovable.app" },
     ],
   },
   {
